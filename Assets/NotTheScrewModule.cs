@@ -202,7 +202,7 @@ public class NotTheScrewModule : MonoBehaviour
                     prevPos = curPos;
                     curPos = temp;
                     screenText.text = (cells[curPos] + 1).ToString();
-                    Debug.LogFormat("[Not The Screw #{0}] Moved to colum {1}, row {2}, with grid number {3}, passing through color {4}, letter {5}", _moduleId, (curPos % 6) + 1, (curPos / 6) + 1, cells[curPos] + 1, colors[holeColors[screwLoc]], "ABCD".Substring(labels[button], 1));
+                    Debug.LogFormat("[Not The Screw #{0}] Moved to column {1}, row {2}, with grid number {3}, passing through color {4}, letter {5}", _moduleId, (curPos % 6) + 1, (curPos / 6) + 1, cells[curPos] + 1, colors[holeColors[screwLoc]], "ABCD".Substring(labels[button], 1));
                     passedThroughNums[cells[curPos]] = true;
                     passedThroughColors[holeColors[screwLoc]] = true;
                     passedThroughLets[labels[button]] = true;
